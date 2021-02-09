@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<form action="{{ url_for('predict')}}" method="POST">
+	<input type="text" name="age" placeholder="Enter your age ex.(33)"> <br><br>
+	<input type="text" name="crp" placeholder="Enter your CRP level ex.(21)"> <br><br>
+	<input type="text" name="diabetes" placeholder="Diabetes yes=1 :: no=0"> <br><br>
+	<input type="text" name="blood" placeholder="Blood presure yes=1 :: no=0"> <br><br>
+	<input type="text" name="fever" placeholder="Enter fever level ex.(98.6)"> <br><br>
+	<input type="text" name="oxygen" placeholder="Enter oxygen level ex.(95)"> <br><br>
+                
+	<input type="submit" name="submit" value="submit">
+	</form>
+
+	{{ pred }}
+
+
+</body>
+</html>
